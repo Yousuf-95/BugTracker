@@ -21,7 +21,7 @@ body{
 
 #showcase{
     height: 100vh;
-    background: url("image001_pymjtr.webp");
+    background: url("../images/bgimage2.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -10,9 +10,10 @@ if(!isset($_SESSION['username']))
 <!doctype html>
 <html>
 <head>
-  <title>Search Result - Knowledge Base</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Search Result - BugTracker</title>
   <link rel="icon" type="image/png" href="images\favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -22,7 +23,7 @@ if(!isset($_SESSION['username']))
   <header>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3">
       <div class="container">
-      <a href="dashboard.php" class="navbar-brand logo"><img src = "images/Vectorbug.svg" alt="BugTracker"></a>
+        <a href="dashboard.php" class="navbar-brand logo"><img src = "images/Vectorbug.svg" alt="BugTracker"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -31,7 +32,7 @@ if(!isset($_SESSION['username']))
             { echo '<li class = "nav-item"><a class = "nav-link" href="superadmin.php">Admin Dashboard</a></li>'; }
             ?>
             <li class="nav-item"><a class="nav-link" href="addissue.php">Add Issue</a></li>
-            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['name']; ?></a>
+            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><?php echo ucfirst($_SESSION['name']); ?></a>
               <div class="dropdown-menu">
                 <a href="logout.php" class="dropdown-item">Logout</a>
               </div>

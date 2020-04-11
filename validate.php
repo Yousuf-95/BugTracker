@@ -17,6 +17,6 @@ if($result->num_rows > 0)
 else
 {
   $_SESSION['error']='login';
-  header("Location:login.php");
+  header("Location:index.php");
 }
 ?>

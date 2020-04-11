@@ -9,7 +9,7 @@ error_reporting(E_ALL);
     function connect()
     {
       global $dblink;
-      $dblink = new mysqli("localhost","root","","kb_storage");//DATABASE CONNECTION
+      $dblink = new mysqli("localhost","u804242404_yousuf","&+ekk7Ye","u804242404_kb_storage");//DATABASE CONNECTION
       if($dblink == false)
       {
         die("ERROR: Could not connect. " . mysqli_connect_error());//shows error on erroneous connection

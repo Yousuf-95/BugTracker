@@ -5,7 +5,7 @@ session_start();
 if(!isset($_SESSION['username']))
 {
   $_SESSION['error'] = 'noaccess';
-  header("Location:login.php");
+  header("Location:index.php");
 }
 if($_SESSION['role_type'] != 'superadmin')
 {
@@ -16,20 +16,21 @@ if($_SESSION['role_type'] != 'superadmin')
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Register - Knowledge Center</title>
+  <title>Register - BugTracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script> -->
   <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script> -->
+  <link rel="icon" type="image/png" href="images\favicon.png"><!--Favicon image at the top with title of browser tab-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style2.css">
-  <link rel="icon" type="image/png" href="images\favicon.png"><!--Favicon image at the top with title of browser tab-->
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3">
       <div class="container">
-        <a href="dashboard.php" class="navbar-brand">AIS Solutions</a>
+        <a href="dashboard.php" class="navbar-brand logo"><img src = "images/Vectorbug.svg" alt="BugTracker"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">

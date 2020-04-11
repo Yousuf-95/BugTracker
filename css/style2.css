@@ -1,0 +1,167 @@
+@media (max-width: 1600px) and (min-width: 1200px) {
+  #login>div{
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 600px){
+  #login>div{
+    width: 45% !important;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #login>div{
+    width: 75% !important;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .container1{
+    width: 95%;
+  }
+
+.tabs{
+  display: flex;
+  flex-direction: column;
+  /* overflow: none; */
+  width: 100%;
+}
+
+.tabs .content {
+  top: 114px;
+}
+
+
+
+label{
+  margin-bottom: 0;
+}
+
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+
+  table tr {
+    background-color: #f8f8f8;
+    /* border: 1px solid #ddd; */
+    padding: .35em;
+  }
+
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    /* border-bottom: 3px solid #ddd; */
+    display: block;
+    padding-bottom: 0;
+    margin-top: 0.5rem;
+    /* margin-bottom: .625em; */
+  }
+
+  table tr td {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    border-top: 0 !important;
+  }
+
+  table tr td::before {
+
+    /* display: block !important; */
+    content:  attr(data-label) '\A';
+    white-space: pre-line;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  table tr td:last-child::before {
+
+    /* display: block !important; */
+    content: '';
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  table tr td:last-child {
+    /* margin-bottom: 0; */
+    border-bottom: 0;
+  }
+
+  .tab #tab-content3 table tr td{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tab #tab-content3 table tr td:last-child{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tab #tab-content3 table tr td::before{
+    content: attr(data-label);
+    white-space: pre-line;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* text-align: left ; */
+  }
+
+  /* --------------login.php---------------- */
+  #login>div{
+    width: 95% !important;
+  }
+
+  /* --------------register.php---------------- */
+  #registeruser>div{
+    width: 90% !important;
+  }
+
+  /* --------------edituser.php---------------- */
+  #edituser>div{
+    width: 90% !important;
+  }
+
+
+}

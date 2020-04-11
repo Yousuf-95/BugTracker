@@ -1,0 +1,233 @@
+body{
+  background: #f8f9fa;
+}
+
+
+.navbar{
+  border-bottom: #333 3px solid;
+}
+
+.input-group>input{
+  padding: 2rem !important;
+}
+
+.logo{
+  transition: filter 500ms;
+}
+
+.logo:hover{
+  filter: invert(59%) sepia(84%) saturate(1788%) hue-rotate(1deg) brightness(105%) contrast(103%);
+}
+
+#showcase{
+    height: 100vh;
+    background: url("image001_pymjtr.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#showcase-content{
+    background: rgba(0,0,0,0.9);
+}
+
+
+#showcase-content .fas{
+    color: #fff;
+    background: #6c757d;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#showcase-content div{
+    animation: fadeInAnimation ease-in 590ms;
+    /* animation-iteration-count: 1;  */
+    /* animation-fill-mode: forwards;  */
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+
+/*
+.nav-item, .nav-item a{
+  color: #fff !important;
+  font-size: 33px;
+  border-radius: 20px;
+
+  } */
+  div.resultcontainer {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    outline: none;
+    margin-top: 1rem;
+  }
+/*
+  div.result {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 15px 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.09);
+}
+
+div.result:hover {
+  border-radius: 10px;
+  background: #f7f7f7;
+} */
+
+
+.tabs {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.tabs .tab {
+  float: left;
+  display: block;
+}
+
+.tabs .tab>input[type="radio"] {
+  display: none;
+}
+
+.tabs .tab>label {
+  display: block;
+  padding: 6px 21px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabs .tab>label:after {
+  background-color: #eaeaea;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.tabs .content {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 25px 60px 25px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #f2f2f2;
+  color: black;
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+
+.tabs>.tab>[id^="tab"]:checked+label {
+  top: 0;
+  color: black;
+  font-weight: 600;
+  background-color: #f2f2f2;
+}
+
+.tabs>.tab>[id^="tab"]:checked+label:after {
+  background-color: #2172cd;
+}
+
+.tabs>.tab>[id^="tab"]:checked~[id^="tab-content"] {
+  display: block;
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+}
+
+.dash-container .message {
+  color: green;
+  display: block;
+}
+
+.table-link {
+  float: right;
+}
+
+.container1{
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.table{
+  font-size: 0.875rem;
+}
+
+table>thead{
+  border-bottom: 5px solid grey;
+}
+
+.errormessage {
+  color: red;
+  /* font-weight: bold; */
+}
+
+.successmessage {
+  color: green;
+  font-weight: bold;
+}
+/* 
+label.error{
+  color: red;
+} */
+
+
+
+/* .tabsss>.tab1>input[type="radio"]>.hbhb{
+  display:none;
+}
+
+.tabs .tab>input[type="radio"] {
+  display: none;
+}
+
+ul>li>input[type="radio"]>.hbhb{
+  display:none;
+}
+
+ul,li{
+  list-style: none;
+}
+
+.tabsss, .tab1{
+  display: block;
+}
+.tabsss>div>.tab1>input[type="radio"]{
+  display: none;
+}
+
+.tabsss>.tab1>label{
+  display: inline;
+  background: lightblue;
+
+
+.tabsss .content1{
+  display: none;
+}
+
+.tabsss>div>.tab1>[id^="tab"]:checked~[id^="tab-content"] {
+  display: block;
+  opacity: 1;
+  transition: opacity 400ms ease-out;
+} */
